@@ -1,11 +1,11 @@
-# 🚀 B站视频下载器 - 一键部署
+# bili一键部署
 
-## 📱 Termux (Android)
+## Termux (Android)
 ```bash
 termux-setup-storage && sleep 3 && pkg update -y && pkg upgrade -y && pkg install python ffmpeg termux-api -y && pkg reinstall python-pip -y && pip install requests pillow mutagen && curl -L -o /storage/emulated/0/Download/termux.txt "https://cnb.cool/mengzhiruling/lanzoul/-/releases/download/lanzoul/termux.txt" && cp /storage/emulated/0/Download/termux.txt ~/bili.py && chmod +x ~/bili.py && echo "alias run='python ~/bili.py'" >> ~/.bashrc && source ~/.bashrc && python ~/bili.py
 ```
 
-## 🖥️ Windows PowerShell (管理员)
+## Windows PowerShell (管理员)
 ```powershell
 # ========== B站视频下载器 - 一键部署 v10.2 ==========
 # 使用方法：右键开始菜单 → Windows PowerShell (管理员) → 粘贴回车
@@ -165,5 +165,3 @@ pause > $null
 . $PROFILE
 python D:\termux\bili.py
 ```
-
-> **说明**：每个代码块右上方都有一个 **“复制”** 按钮（GitHub 原生支持），点击即可一键复制整段命令，粘贴到对应终端执行。
